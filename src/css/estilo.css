@@ -199,7 +199,8 @@ p[data-width="wide"] {
 
 
 .primary-header {
-  padding-top: var(--size-600);
+  padding-top: 4vh;
+  min-height: 18vh;
 }
 
 .nav-wrapper {
@@ -374,10 +375,62 @@ p[data-width="wide"] {
   height: 50px;
 }
 
+.main-slide{
+  margin-top: 2vh;
+
+}
+
+.main-slide .container {
+  position: relative;
+  width: clamp(360px, 100%, 1920px);
+  height: 70vh;
+  text-align: center;
+}
+
+.main-slide img {
+  position: absolute;
+  object-fit: cover;
+  width: 100vw;
+  height: 70vh;
+}
+
+.main-slide .slide-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+
+.slide-content .title {
+  font-size: var(--fs-900);
+  color: var(--clr-accent-400);
+}
+
+.slide-content .text-title {
+  font-size: var(--fs-700);
+  color: var(--clr-neutral-200);
+}
+
+
+/*seção quem somos*/
+.who-we-are {
+  color: var(--clr-neutral-100);
+  text-align: center;
+  margin-top: 10vw;
+}
+
+.who-text {
+  margin-top: 5vh;
+}
+
+
 /*MAR ANIMADO*/
 .water {
   z-index: -1;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   height: 100%;
@@ -397,7 +450,7 @@ p[data-width="wide"] {
   height: 200px;
   width: 100%;
   bottom: 0;
-  margin-left: 99.96vw;
+  margin-left: 98.5vw;
   transform: scaleX(-1);
   animation: ondas 10s infinite linear;
 }
