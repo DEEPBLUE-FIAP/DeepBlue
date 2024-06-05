@@ -12,62 +12,190 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="primary-header">
-      <div class="container">
-        <div class="nav-wrapper">
-          <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <img class="icon-hamburger" src="./src/assets/icon-hamburger.svg" alt="hamburguer" aria-hidden="true">
-            <img class="icon-close" src="./src/assets/icon-close.svg" alt="close-menu" aria-hidden="true">
-            <span class="visually-hidden">Menu</span>
-          </button>
-          <img src="./src/assets/deepblue.png" alt="Manage" id="deepbluelogo">
-          <nav class="primary-navigation" id="primary-navigation">
-            <!-- Esta é a parte que fica na landing page -->
-            <ul aria-label="Primary" role="list" class="nav-list">
-              <li><a href="#">Quem somos</a></li>
-              <li><a href="#">Contato</a></li>
-              <li><a href="#">Localização</a></li>
-              <li><a href="#">Veja as praias</a></li>
-              <li class="about">
-                <a href="#">Sobre</a>
-                <img src="./src/assets/arrow-down.svg" alt="arrow-down" id="arrow" class="arrow-down"></li>
-            </ul>
-          </nav>
-          <button class="button | display-sm-none display-md-inline-flex">Participar</button>
-          <img src="./src/assets/entrar.png" alt="Entrar com sua conta" class="access">
-        </div>
-
-        <nav class="secondary-navigation" id="secondary-navigation">
-          <!-- Esta é a parte que fica em outro HTML -->
-          <ul aria-label="Secondary" role="list" class="second-nav-list">
-            <li><a href="#">O problema</a></li>
-            <li><a href="#">Nosso projeto</a></li>
-            <li><a href="#">Objetivos</a></li>
-            <li><a href="#">A quem ajudamos?</a></li>
-            <li><a href="#">Beneficios</a></li>
-            <li><a href="#">Limpando as praias</a></li>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <img src="./src/assets/deepblue.png" alt="Manage" id="deepbluelogo">
+        <nav class="primary-navigation" id="primary-navigation">
+          <!-- Esta é a parte que fica na landing page -->
+          <ul aria-label="Primary" role="list" class="nav-list">
+            <li><a href="#who-we-are">Quem somos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Localização</a></li>
+            <li><a href="#">Veja as praias</a></li>
+            <li class="about">
+              <a href="#">Sobre</a>
+              <img src="./src/assets/arrow-down.svg" alt="arrow-down" id="arrow" class="arrow-down"></li>
           </ul>
         </nav>
+        <button class="button | display-sm-none display-md-inline-flex">Participar</button>
+        <img src="./src/assets/entrar.png" alt="Entrar com sua conta" class="access">
+      </div>
+
+      <nav class="secondary-navigation" id="secondary-navigation">
+        <!-- Esta é a parte que fica em outro HTML -->
+        <ul aria-label="Secondary" role="list" class="second-nav-list">
+          <li><a href="#">O problema</a></li>
+          <li><a href="#">Nosso projeto</a></li>
+          <li><a href="#">Objetivos</a></li>
+          <li><a href="#">A quem ajudamos?</a></li>
+          <li><a href="#">Beneficios</a></li>
+          <li><a href="#">Limpando as praias</a></li>
+        </ul>
+      </nav>
           
           
       </div>
   </header>
 
-  <section class="main-slide">
+
+  <main>
+    <!-- seção do slide -->
+    <section class="main-slide">
+      <div class="container">
+        <img src="./src/assets/slide1.jpg" alt="slide">
+        <div class="slide-content">
+          <p class="title">DEEPBLUE</p>
+          <p class="text-title">A SUA JORNADA CONTRA A CONTAMINAÇÃO DOS MARES COMEÇA AQUI</p>
+        </div>
+      </div>
+    </section>
+    <!-- seção quem somos -->
+    <section class="who-we-are | margin-bottom-1100" id="who-we-are">
+      <div class="container">
+        <div class="text-part">
+          <p class="who-title">Quem somos</p>
+          <p class="who-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a ipsum justo. Suspendisse in metus elit. Pellentesque at felis dignissim, pellentesque sem at, pellentesque risus. Suspendisse elementum lacinia velit
+          , vitae luctus nunc auctor iaculis. Morbi arcu massa, consectetur a.</p>
+        </div>
+        <div class="image">
+        </div>
+      </div>
+    </section>
+
+    <!-- seção cards -->
+    <section class="cards-half-nav | margin-bottom-900">
+      <!-- O problema -->
+      <div class="card">
+        <div class="card__content">
+
+          <div class="card__front">
+            <h3 class="card__title">O problema</h3>
+          </div>
+          
+          <div class="card__back">
+            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam laboriosam nam magni et. Inventore!</p>
+          </div>
+        </div>
+      </div>
+      <!-- Nosso projeto -->
+      <div class="card">
+        <div class="card__content">
+
+          <div class="card__front">
+            <h3 class="card__title">Nosso projeto</h3>
+          </div>
+          
+          <div class="card__back">
+            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam laboriosam nam magni et. Inventore!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Objetivos -->
+      <div class="card">
+        <div class="card__content">
+
+          <div class="card__front">
+            <h3 class="card__title">Objetivo</h3>
+          </div>
+          
+          <div class="card__back">
+            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam laboriosam nam magni et. Inventore!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- seção de incentivo -->
+    <section class="cta | padding-block-900 | bg-accent-400 | text-neutral-100">
+      <div class="container">
+        <div class="even-columns vertical-align-center">
+          <div>
+            <p class="fs-primary-heading fw-bold">Seja parte desta iniciativa.</p>
+          </div>
+          <div class="justify-self-end-md">
+            <button class="button" data-type="inverted">Ver as praias</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100">
     <div class="container">
-      <img src="./src/assets/slide1.jpg" alt="slide">
-      <div class="slide-content">
-        <p class="title">DEEPBLUE</p>
-        <p class="text-title">A SUA JORNADA CONTRA A CONTAMINAÇÃO DOS MARES COMEÇA AQUI</p>
+      <div class="primary-footer-wrapper">
+        <div class="primary-footer-logo-social">
+          <a href="#" aria-label="home">
+            <svg class="logo" width="146" height="24">
+              <use xlink:href="images/logo.svg#logo"></use>
+            </svg>
+          </a>
+
+          <ul class="social-list" role="list" aria-label="Social links">
+            <li><a aria-label="facebook" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./src/assets/social-icons.svg#icon-facebook"></use>
+                </svg></a>
+            </li>
+            <li><a aria-label="youtube" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./src/assets/social-icons.svg#icon-youtube"></use>
+                </svg>
+              </a></li>
+            <li><a aria-label="twitter" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./src/assets/social-icons.svg#icon-twitter"></use>
+                </svg>
+              </a></li>
+            <li><a aria-label="pinterest" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./src/assets/social-icons.svg#icon-pinterest"></use>
+                </svg>
+              </a></li>
+            <li><a aria-label="instragram" href="#">
+                <svg class="social-icon">
+                  <use xlink:href="./src/assets/social-icons.svg#icon-instagram"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+        <div class="primary-footer-nav">
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Veja as Praias</a></li>
+              <li><a href="#">Nossa missão</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Localização</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="primary-footer-form">
+          <form action="">
+            <input type="text">
+            <button class="button" data-shadow="none">Procurar</button>
+          </form>
+          <p>DEEPBLUE 2024. <br> Todos os direitos reservados</p>
+        </div>
       </div>
     </div>
-  </section>
-
-
-  <section class="who-we-are">
-    <p class="who-title">Quem somos</p>
-    <p class="who-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque praesentium, odit eveniet perferendis itaque, explicabo quod expedita repudiandae neque quidem adipisci recusandae corrupti assumenda doloribus id! Officia quas blanditiis consequuntur?</p>
-  </section>
+  </footer>
 
   <div class="water">
       <img src="./src/assets/onda1.png" alt="" id="img1">
