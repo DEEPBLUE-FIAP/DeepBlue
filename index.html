@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DeepBlue</title>
     <link rel="stylesheet" href="./src/css/estilo.css">
-    <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,8 +76,75 @@
       </div>
     </section>
 
+    <section class="why-we-fight | margin-bottom-900 | container">
+      <div class="why-we-fight-text">
+        <span>descubra...</span>
+        <h1>por quem lutamos</h1>
+        <hr>
+        <p>A beleza e o mistério estão escondidos no fundo do mar. Explore para saber sobre Animais Aquáticos.</p>
+        <button class="button" onclick="window.location.href='//pt.wikipedia.org/wiki/Animal_aqu%C3%A1tico'">Artigo</button>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide--one">
+            <div>
+              <h2>Medusa</h2>
+              <p>Medusas e geleias do mar são os nomes comuns informais dados à fase medusa de certos membros gelatinosos do subfilo Medusozoa, uma parte importante do filo Cnidaria.</p>
+              <button class="button" onclick="window.location.href='//pt.wikipedia.org/wiki/Medusa'">ver mais</button>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide--two">
+            <div>
+              <h2>Cavalo marinho</h2>
+              <p>
+                Os cavalos-marinhos são encontrados principalmente em águas salgadas tropicais e temperadas rasas em todo o mundo. Eles vivem em áreas protegidas, como tapetes de ervas marinhas, estuários, recifes de coral e manguezais. Quatro espécies são encontradas nas águas do Pacífico, da América do Norte à América do Sul.
+              </p>
+              <button class="button" onclick="window.location.href='//en.wikipedia.org/wiki/Seahorse'">ver mais</button>
+            </div>
+          </div>
+    
+          <div class="swiper-slide swiper-slide--three">
+    
+            <div>
+              <h2>Polvo</h2>
+              <p>
+                Os polvos habitam várias regiões do oceano, incluindo recifes de coral, águas pelágicas e fundo do mar alguns vivem na zona entremarés e outros em profundidades abissais. A maioria das espécies cresce rapidamente, amadurece cedo e tem vida curta.
+              </p>
+              <button class="button" onclick="window.location.href='//en.wikipedia.org/wiki/Octopus'">ver mais</button>
+            </div>
+          </div>
+    
+          <div class="swiper-slide swiper-slide--four">
+    
+            <div>
+              <h2>Tubarão</h2>
+              <p>
+                Os tubarões são um grupo de peixes elasmobrânquios caracterizados por um esqueleto cartilaginoso, cinco a sete fendas branquiais nas laterais da cabeça e nadadeiras peitorais que não estão fundidas à cabeça.
+              </p>
+              <button class="button" onclick="window.location.href='//en.wikipedia.org/wiki/Shark'">ver mais</button>
+            </div>
+          </div>
+    
+          <div class="swiper-slide swiper-slide--five">
+    
+            <div>
+              <h2>Golfinho</h2>
+              <p>
+                Os golfinhos são facilmente encontráveis. A maioria das espécies prefere as águas quentes das zonas tropicais, mas algumas, como o golfinho-baleia franca, preferem climas mais frios. Os golfinhos alimentam-se principalmente de peixes e lulas, mas alguns, como a orca, alimentam-se de grandes mamíferos, como as focas.
+              </p>
+              <button class="button" onclick="window.location.href='//en.wikipedia.org/wiki/Dolphin'">ver mais</button>
+            </div>
+          </div>
+        </div>
+        <!-- Adiciona paginação -->
+        <div class="swiper-pagination"></div>
+      </div>
+      <img src="https://cdn.pixabay.com/photo/2021/11/04/19/39/jellyfish-6769173_960_720.png" alt="" class="bg">
+      <img src="https://cdn.pixabay.com/photo/2012/04/13/13/57/scallop-32506_960_720.png" alt="" class="bg2">
+    </section>
+
     <!-- seção cards -->
-    <section class="cards-half-nav | margin-bottom-900">
+    <section class="cards-half-nav | margin-bottom-900 | container">
       <!-- O problema -->
       <div class="card">
         <div class="card__content">
@@ -203,6 +270,7 @@
       <img src="https://i.gifer.com/R30w.gif" id="peixe3">
   </div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="./src/js/script.js"></script>
 </body>
 </html>

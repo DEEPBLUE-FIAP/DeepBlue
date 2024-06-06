@@ -22,41 +22,41 @@ about.addEventListener('click', () => {
 });
 
 //SLIDER
-const slides = document.querySelectorAll(".slides img");
-let slideIndex = 0;
-let intervalId = null;
 
-document.addEventListener("DOMContentLoaded", initializeSlider);
-
-function initializeSlider(){
-    if(slides.length > 0){
-        slides[slideIndex].classList.add("displaySlide");
-        intervalId = setInterval(nextSlide, 5000);
+var swiper = new Swiper(".swiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 3,
+      slideShadows: true
+    },
+    keyboard: {
+      enabled: true
+    },
+    mousewheel: {
+      thresholdDelta: 70
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2
+      },
+      768: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 2
+      },
+      1560: {
+        slidesPerView: 3
+      }
     }
-}
-
-function showSlide(index){
-    if(index >= slides.length){
-        slideIndex = 0;
-    }
-    else if(index < 0){
-        slideIndex = slides.length - 1;
-    }
-
-    slides.forEach(slide => {
-        slide.classList.remove("displaySlide");
-    });
-    slides[slideIndex].classList.add("displaySlide");
-}
-
-function prevSlide(){
-    clearInterval(intervalId);
-    slideIndex--;
-    showSlide(slideIndex);
-}
-
-function nextSlide(){
-    slideIndex++;
-    showSlide(slideIndex);
-}
-
+  });
