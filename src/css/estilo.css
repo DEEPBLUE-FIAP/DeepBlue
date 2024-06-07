@@ -1005,7 +1005,8 @@ input:where([type="text"], [type="email"], ) {
   }
 }
 
-/* cta */
+
+/* seção de incentivo (cta) */
 
 .cta {
   position: relative;
@@ -1020,7 +1021,6 @@ input:where([type="text"], [type="email"], ) {
 }
 
 
-/* seção de incentivo */
 .cta::before {
   content: "";
   position: absolute;
@@ -1309,6 +1309,7 @@ input:where([type="text"], [type="email"], ) {
 .padding-block-900 {
   padding-block: var(--size-900);
 }
+
 .padding-block-700 {
   padding-block: var(--size-700);
 }
@@ -1331,12 +1332,6 @@ input:where([type="text"], [type="email"], ) {
 
 .display-sm-none {
   display: none;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-  transform: translateX(-50%);
 }
 
 img{

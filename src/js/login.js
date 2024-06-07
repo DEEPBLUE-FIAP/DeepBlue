@@ -15,3 +15,7 @@ loginButton.addEventListener('click', () => {
   userForms.classList.add('bounceRight')
 }, false)
 
+document.getElementById('forms-id').addEventListener('submit', function(event) {
+  event.preventDefault(); //
+  window.location.href = '../../index.html';
+});

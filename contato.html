@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="./src/css/contato.css">
+</head>
+<body>
+    <section class="forms-contact | padding-block-700">
+        <h2 class="forms_title">Envie sua mensagem</h2>
+        <p>O prazo de resposta para as mensagens é de até 72 horas, fique atento ao seu email, pois é aí onde a resposta chegará!</p>
+        <form class="forms_form" id="forms-id">
+          <fieldset class="forms_fieldset">
+            <div class="forms_field">
+              <input type="text" placeholder="Nome completo" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="email" placeholder="Email" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="text" placeholder="Número de telefone" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <input type="text" placeholder="Título da mensagem" class="forms_field-input" required />
+            </div>
+            <div class="forms_field">
+              <textarea name="mensagem" placeholder="Digite sua mensagem aqui...." class="forms_field-input | message" required></textarea>
+            </div>
+          </fieldset>
+          <div class="forms_buttons">
+            <input type="submit" value="Enviar" class="forms_buttons-action">
+          </div>
+        </form>
+    </section>
+
+    <script src="./src/js/contato.js"></script>
+</body>
+</html>

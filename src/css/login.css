@@ -240,9 +240,7 @@ input::placeholder {
   background-color: var(--clr-accent-300);
 }
 
-/**
- * Login and signup forms
- */
+/*forms do login e do cadastro*/
 .user_options-forms {
   position: absolute;
   top: 50%;
@@ -414,9 +412,6 @@ input::placeholder {
   animation: bounceRight 1s forwards;
 }
 
-/**
-* Responsive 990px
-*/
 @media screen and (max-width: 50rem) {
   .user_options-forms {
     min-height: 350px;

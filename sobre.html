@@ -18,14 +18,14 @@
         <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
           <span class="visually-hidden">Menu</span>
         </button>
-        <img src="./src/assets/deepblue.png" alt="Manage" id="deepbluelogo">
+        <a href="./index.html"><img src="./src/assets/deepblue.png" alt="Manage" id="deepbluelogo"></a>
         <nav class="primary-navigation" id="primary-navigation">
-          <!-- Esta é a parte que fica na landing page -->
+          <!-- Esta parte é do INDEX -->
           <ul aria-label="Primary" role="list" class="nav-list">
             <li><a href="./index.html#who-we-are">Quem somos</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Localização</a></li>
-            <li><a href="#">Veja as praias</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./localizacao.html">Localização</a></li>
+            <li><a href="./praias.html">Veja as praias</a></li>
             <li class="about">
               <a>Sobre</a>
               <img src="./src/assets/arrow-down.svg" alt="arrow-down" id="arrow" class="arrow-down">
@@ -33,22 +33,133 @@
           </ul>
         </nav>
         <button class="button | display-sm-none display-md-inline-flex">Participar</button>
-        <img src="./src/assets/entrar.png" alt="Entrar com sua conta" class="access">
+        <a href="./login.html"><img src="./src/assets/entrar.png" alt="Entrar com sua conta" class="access"></a>
       </div>
 
       <nav class="secondary-navigation" id="secondary-navigation">
-        <!-- Esta é a parte que fica em outro HTML -->
         <ul aria-label="Secondary" role="list" class="second-nav-list">
+          <!-- Esta é a parte que fica no INDEX -->
           <li><a href="./index.html#cards">O problema</a></li>
           <li><a href="./index.html#cards">Nosso projeto</a></li>
           <li><a href="./index.html#cards">Objetivo</a></li>
-          <li><a href="#">A quem ajudamos?</a></li>
-          <li><a href="#">Beneficios</a></li>
-          <li><a href="#">Limpando as praias</a></li>
+           <!-- Esta é a parte que fica no SOBRE -->
+          <li><a href="./sobre.html#a-quem-ajudamos">A quem ajudamos?</a></li>
+          <li><a href="./sobre.html#beneficios">Beneficios</a></li>
+          <li><a href="./sobre.html#dia-a-dia">Dia a Dia</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
+  <!-- seção que contém a última metade do nav -->
+  <section class="about-cards">
+    <div class="container">
+      <div class="card | margin-bottom-900" id="a-quem-ajudamos">
+        <img src="./src/assets/persona.jpg" alt="persona">
+        <div class="text-part">
+          <h1 class="title">A quem ajudamos?</h1>
+          <p class="text">De maneira geral, o nosso público-alvo são pessoas que defendem ou se identificam com a causa ambiental e gostariam de fazer parte de uma comunidade engajada e ativa, assim como indivíduos que gostariam de fazer parte de um novo grupo que preza pela preservação do meio ambiente e que estaria disposto a botar a mão na massa.
+          </p>
+        </div>
+      </div>
+
+      <div class="card | margin-bottom-900" id="beneficios">
+        <img src="./src/assets/persona-limpando.jpg" alt="persona">
+        <div class="text-part">
+          <h1 class="title">Benefícios</h1>
+          <ul class="text">
+            <li>Apresentar conteúdos atualizados por meio de informações notícias e vídeos acerca da atual situação global do ecossistema marinho; </li>
+            <li>Demonstrar uma maior transparência ao disponibilizar quais tecnologias foram utilizadas no desenvolvimento do projeto, de modo a prezar pela segurança do usuário; </li>
+            <li>Proporcionar a oportunidade do desenvolvimento e a criação de uma comunidade sustentável ativa e engajada, que se interesse em participar de projetos voluntariados na limpeza de regiões costeiras</li>
+            <li>Premiação dos usuários que mais auxiliaram e realizaram ações pró-ambientais</li>
+            <li>Para nossos clientes corporativos, oferecemos uma base de usuário já engajados e comprometidos a mudarem a situação do ecossistema marinho acerca da poluição.</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="card | margin-bottom-900" id="dia-a-dia">
+        <img src="./src/assets/dia-a-dia.jpg" alt="persona" class="image">
+        <div class="text-part">
+          <h1 class="title">Dia a Dia</h1>
+          <p class="text">Como organização, incentivamos o espectador a contribuir com o processo de sustentabilidade dos oceanos, além também de incentivar a participação e desenvolvimento de uma comunidade engajada e ativa na preservação do ecossistema marinho, consequentemente, quem toma uma parte do seu dia para visitar e participar a plataforma, além de ajudar na iniciativa, adere a um futuro retorno benéfico para sí de um futuro mais verde e limpo.</p>
+          <p class="text-final">Afinal, todos gostamos do nosso planeta e sua basta porém efímera existência de vida, e os únicos que podem cuidá-lo e salvá-lo, adivinhe, somos nós, seres humanos.</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- seção de incentivo -->
+  <section class="cta | padding-block-900 | bg-accent-400 | text-neutral-100">
+    <div class="container">
+      <div class="even-columns vertical-align-center">
+        <div>
+          <p class="fs-primary-heading fw-bold">Seja parte desta iniciativa.</p>
+        </div>
+        <div class="justify-self-end-md">
+          <a href="./praias.html"><button class="button" data-type="inverted">Ver as praias</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100">
+    <div class="container">
+      <div class="primary-footer__wrapper">
+        <a class="primary-footer__logo" aria-label="home">
+          <img class="logo" src="./src/assets/deepblue.png">
+        </a>
+  
+        <ul class="social-list" role="list" aria-label="Social links">
+          <li><a aria-label="facebook" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-facebook"></use>
+              </svg></a>
+          </li>
+          <li><a aria-label="youtube" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-youtube"></use>
+              </svg>
+            </a></li>
+          <li><a aria-label="twitter" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-twitter"></use>
+              </svg>
+            </a></li>
+          <li><a aria-label="pinterest" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-pinterest"></use>
+              </svg>
+            </a></li>
+          <li><a aria-label="instagram" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-instagram"></use>
+              </svg>
+            </a></li>
+        </ul>
+  
+        <div class="primary-footer__nav-wrapper">
+          <nav class="footer-nav">
+            <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
+              <li><a href="#">Quem somos</a></li>
+              <li><a href="#">Veja as Praias</a></li>
+              <li><a href="#">Nossa missão</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Localização</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- <div class="primary-footer-form"> -->
+        <form class="primary-footer__form"  action="">
+          <input type="text">
+          <button class="button" data-shadow="none">Procurar</button>
+        </form>
+        <p class="primary-footer__copyright">DEEPBLUE 2024. Todos os direitos reservados</p>
+      </div>
+      <!-- </div> -->
+    </div>
+  </footer>
 
   <script src="./src/js/script.js"></script>
 </body>
