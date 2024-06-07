@@ -17,5 +17,5 @@ loginButton.addEventListener('click', () => {
 
 document.getElementById('forms-id').addEventListener('submit', function(event) {
   event.preventDefault(); //
-  window.location.href = '../../index.html';
+  window.location.href = './index.html';
 });
