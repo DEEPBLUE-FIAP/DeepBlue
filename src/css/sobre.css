@@ -635,6 +635,7 @@ input:where([type="text"], [type="email"], ) {
   opacity: .1;
 }
 
+/* classes de utilidade */
 .text-primary-400 {
   color: var(--clr-primary-400);
 }

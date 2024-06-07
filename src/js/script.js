@@ -69,3 +69,8 @@ slide.addEventListener("click", function () {
   audio.currentTime = 0; // Reinicia o áudio para o início
   audio.play();
 });
+
+//REDIRECIONAMENTO PARA O FORMS PARTICIPAR
+document.getElementById('participar').addEventListener('click', function() {
+  window.location.href = './participar.html'; // Substitua 'nova_pagina.html' pelo URL da página de destino
+});
