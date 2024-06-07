@@ -3,10 +3,7 @@
 /* variáveis padrão para o site */
 :root {
     --bdrds: 3px;
-    --white: #fff;
-    --black: #000;
     --gray: #ccc;
-    --salmon: #e8716d;
     --smoky-black: rgba(34, 34, 34, 0.85);
     --clr-accent-500: hsl(228, 39%, 23%);
     --clr-accent-400: hsl(207, 100%, 50%);
@@ -35,7 +32,6 @@
     --fs-500: 0.9375rem;
     --fs-600: 1rem;
     --fs-700: 1.125rem;
-    /*18px*/
     --fs-800: 2.5rem;
     --fs-900: 3.5rem;
     --fs-body: var(--fs-400);
@@ -176,7 +172,7 @@ p[data-width="wide"] {
 .forms_title {
     margin-bottom: 45px;
     font-size: var(--size-500);
-    font-weight: var(--ff-medium);
+    font-weight: var(--fw-bold);
     line-height: 1em;
     text-transform: uppercase;
     color: var(--clr-accent-400);
@@ -274,7 +270,7 @@ textarea:focus {
     font-size: var(--size-400);
     font-family: var(--ff-body);
     font-weight: var(--ff-light);
-    color: var(--white);
+    color: var(--clr-neutral-100);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     transition: background-color 0.2s ease-in-out;
