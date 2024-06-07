@@ -6,7 +6,6 @@
     <title>DeepBlue</title>
     <link rel="stylesheet" href="./src/css/estilo.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
@@ -22,28 +21,28 @@
         <nav class="primary-navigation" id="primary-navigation">
           <!-- Esta é a parte que fica na landing page -->
           <ul aria-label="Primary" role="list" class="nav-list">
-            <li><a href="#who-we-are">Quem somos</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Localização</a></li>
-            <li><a href="#">Veja as praias</a></li>
+            <li><a href="./index.html#who-we-are">Quem somos</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+            <li><a href="./localizacao.html">Localização</a></li>
+            <li><a href="./praias.html">Veja as praias</a></li>
             <li class="about">
-              <a href="#">Sobre</a>
+              <a>Sobre</a>
               <img src="./src/assets/arrow-down.svg" alt="arrow-down" id="arrow" class="arrow-down"></li>
           </ul>
         </nav>
         <button class="button | display-sm-none display-md-inline-flex">Participar</button>
-        <img src="./src/assets/entrar.png" alt="Entrar com sua conta" class="access">
+        <a href="login.html"><img src="./src/assets/entrar.png" alt="Entrar com sua conta" class="access"></a>
       </div>
 
       <nav class="secondary-navigation" id="secondary-navigation">
         <!-- Esta é a parte que fica em outro HTML -->
         <ul aria-label="Secondary" role="list" class="second-nav-list">
-          <li><a href="#">O problema</a></li>
-          <li><a href="#">Nosso projeto</a></li>
-          <li><a href="#">Objetivos</a></li>
-          <li><a href="#">A quem ajudamos?</a></li>
-          <li><a href="#">Beneficios</a></li>
-          <li><a href="#">Limpando as praias</a></li>
+          <li><a href="#cards">O problema</a></li>
+          <li><a href="#cards">Nosso projeto</a></li>
+          <li><a href="#cards">Objetivo</a></li>
+          <li><a href="./sobre.html">A quem ajudamos?</a></li>
+          <li><a href="./sobre.html">Beneficios</a></li>
+          <li><a href="./sobre.html">Dia a Dia</a></li>
         </ul>
       </nav>
           
@@ -64,12 +63,11 @@
       </div>
     </section>
     <!-- seção quem somos -->
-    <section class="who-we-are | margin-bottom-1100" id="who-we-are">
+    <section class="who-we-are | margin-bottom-1100 | padding-top-900" id="who-we-are">
       <div class="container">
         <div class="text-part">
           <p class="who-title">Quem somos</p>
-          <p class="who-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a ipsum justo. Suspendisse in metus elit. Pellentesque at felis dignissim, pellentesque sem at, pellentesque risus. Suspendisse elementum lacinia velit
-          , vitae luctus nunc auctor iaculis. Morbi arcu massa, consectetur a.</p>
+          <p class="who-text">Somos uma organização sem fins lucrativos que visa a preservação do ecossistema marinho em razão do contínuo processo de poluição dos oceanos. Possuimos como proposta a criação e o desenvolvimento de uma comunidade engajada e ativa que preze pela causa ambiental, de modo que esteja disposta a disponibilizar seu tempo a fazer a diferença no mundo. </p>
         </div>
         <div class="image">
         </div>
@@ -81,7 +79,7 @@
         <span>descubra...</span>
         <h1>por quem lutamos</h1>
         <hr>
-        <p>A beleza e o mistério estão escondidos no fundo do mar. Explore para saber sobre Animais Aquáticos.</p>
+        <p>A Deep Blue possui como um de seus principais objetivos a preservação e sustentabilidade do ecossistema marinho. Explore pela fauna aquática e veja os animais que são prejudicados pelo processo de poluição nas regiões costeiras:</p>
         <button class="button" onclick="window.location.href='//pt.wikipedia.org/wiki/Animal_aqu%C3%A1tico'">Artigo</button>
       </div>
       <div class="swiper">
@@ -144,9 +142,9 @@
     </section>
 
     <!-- seção cards -->
-    <section class="cards-half-nav | margin-bottom-900 | container">
+    <section class="cards-half-nav | margin-bottom-900 | container " id="cards">
       <!-- O problema -->
-      <div class="card">
+      <div class="card" >
         <div class="card__content">
 
           <div class="card__front">
@@ -154,12 +152,14 @@
           </div>
           
           <div class="card__back">
-            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam laboriosam nam magni et. Inventore!</p>
+            <p class="card__body">Dentre os principais agentes causadores não é novidade que as ações antropogênicas exercem um papel primordial para a contaminação dos corpos hídricos e do ecossistema. 
+              <a href="https://oantagonista.com.br/brasil/o-desafio-do-lixo-marinho-como-a-poluicao-profunda-ameaca-os-oceanos/">“A bordo do Navio Oceanográfico Alpha Crucis, da USP, duas novas espécies de peixes foram descobertas, mas a presença majoritária foi de resíduos plásticos, compondo 58,5% dos 603...”</a>    
+              <a href="https://www.repositorio.ufal.br/bitstream/123456789/8872/1/Polui%c3%a7%c3%a3o%20dos%20oceanos%20por%20pl%c3%a1stico%20-%20hist%c3%b3rico%2c%20cienciometria%20e%20principais%20lacunas%20no%20conhecimento.pdf">“Estima-se que cerca de 80% do lixo que se acumula no solo, linhas costeiras, superfície do oceano ou fundo do mar é composto por plástico; assim, esse tipo de poluição se tornou um problema global, já que resíduos plásticos...”</a></p>
           </div>
         </div>
       </div>
       <!-- Nosso projeto -->
-      <div class="card">
+      <div class="card" id="projeto">
         <div class="card__content">
 
           <div class="card__front">
@@ -167,13 +167,13 @@
           </div>
           
           <div class="card__back">
-            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam laboriosam nam magni et. Inventore!</p>
+            <p class="card__body">Para o desenvolvimento da plataforma online utilizamos tecnologias atuais como o HTML5, CSS3 e o Javascript para a criação de um site responsivo, estilizado, informativo, intuitivo e que valide determinados campos da área de login e cadastro, o Python para o armazenamento de dados e validação de campos, e a utilização do Arduino como sistema embarcado para fornecer informações acerca da qualidade da água em diferentes regiões costeiras e que terá seus dados coletados a fim de integrá-los ao site. </p>
           </div>
         </div>
       </div>
 
       <!-- Objetivos -->
-      <div class="card">
+      <div class="card" id="objetivo">
         <div class="card__content">
 
           <div class="card__front">
@@ -181,7 +181,11 @@
           </div>
           
           <div class="card__back">
-            <p class="card__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. At veniam laboriosam nam magni et. Inventore!</p>
+            <p class="card__body">Desenvolver um site dinâmico, animado e responsivo que seja atraente e acessível para um amplo espectro de usuários que queiram aderir a causa e fazer parte de uma nova comunidade;<br><br>
+ 
+              Fornecer informações e notícias acerca da situação e contexto do ecossistema marinho mundial sobre a poluição a fim de proporcionar aos usuários um panorama geral e engajar a comunidade;
+               
+              <br><br>Oferecer funcionalidades que aumentem o engajamento do público e proporcionem uma participação mais ativa e envolvente.</p>
           </div>
         </div>
       </div>
@@ -206,43 +210,40 @@
 
   <footer class="primary-footer | padding-block-700 bg-neutral-900 text-neutral-100">
     <div class="container">
-      <div class="primary-footer-wrapper">
-        <div class="primary-footer-logo-social">
-          <a href="#" aria-label="home">
-            <svg class="logo" width="146" height="24">
-              <use xlink:href="images/logo.svg#logo"></use>
-            </svg>
-          </a>
-
-          <ul class="social-list" role="list" aria-label="Social links">
-            <li><a aria-label="facebook" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="./src/assets/social-icons.svg#icon-facebook"></use>
-                </svg></a>
-            </li>
-            <li><a aria-label="youtube" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="./src/assets/social-icons.svg#icon-youtube"></use>
-                </svg>
-              </a></li>
-            <li><a aria-label="twitter" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="./src/assets/social-icons.svg#icon-twitter"></use>
-                </svg>
-              </a></li>
-            <li><a aria-label="pinterest" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="./src/assets/social-icons.svg#icon-pinterest"></use>
-                </svg>
-              </a></li>
-            <li><a aria-label="instragram" href="#">
-                <svg class="social-icon">
-                  <use xlink:href="./src/assets/social-icons.svg#icon-instagram"></use>
-                </svg>
-              </a></li>
-          </ul>
-        </div>
-        <div class="primary-footer-nav">
+      <div class="primary-footer__wrapper">
+        <a class="primary-footer__logo" aria-label="home">
+          <img class="logo" src="./src/assets/deepblue.png">
+        </a>
+  
+        <ul class="social-list" role="list" aria-label="Social links">
+          <li><a aria-label="facebook" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-facebook"></use>
+              </svg></a>
+          </li>
+          <li><a aria-label="youtube" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-youtube"></use>
+              </svg>
+            </a></li>
+          <li><a aria-label="twitter" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-twitter"></use>
+              </svg>
+            </a></li>
+          <li><a aria-label="pinterest" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-pinterest"></use>
+              </svg>
+            </a></li>
+          <li><a aria-label="instagram" href="">
+              <svg class="social-icon">
+                <use xlink:href="./src/assets/social-icons.svg#icon-instagram"></use>
+              </svg>
+            </a></li>
+        </ul>
+  
+        <div class="primary-footer__nav-wrapper">
           <nav class="footer-nav">
             <ul class="flow" style="--flow-spacer: 1em" aria-label="Footer" role="list">
               <li><a href="#">Quem somos</a></li>
@@ -253,14 +254,14 @@
             </ul>
           </nav>
         </div>
-        <div class="primary-footer-form">
-          <form action="">
-            <input type="text">
-            <button class="button" data-shadow="none">Procurar</button>
-          </form>
-          <p>DEEPBLUE 2024. <br> Todos os direitos reservados</p>
-        </div>
+        <!-- <div class="primary-footer-form"> -->
+        <form class="primary-footer__form"  action="">
+          <input type="text">
+          <button class="button" data-shadow="none">Procurar</button>
+        </form>
+        <p class="primary-footer__copyright">DEEPBLUE 2024. Todos os direitos reservados</p>
       </div>
+      <!-- </div> -->
     </div>
   </footer>
 
@@ -270,7 +271,8 @@
       <img src="https://i.gifer.com/R30w.gif" id="peixe3">
   </div>
 
+  <audio id="oceanWaves" src="./src/assets/ocean-waves-sound.mp3"></audio>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
-    <script src="./src/js/script.js"></script>
+  <script src="./src/js/script.js"></script>
 </body>
 </html>

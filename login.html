@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar</title>
+    <link rel="stylesheet" href="./src/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="user">
+        <div class="user_options-container">
+          <div class="user_options-text">
+            <div class="user_options-unregistered">
+              <h2 class="user_unregistered-title">Não possui uma conta?</h2>
+              <p class="user_unregistered-text">Crie a sua conta para poder participar dos processos seletivos, você também concorre a recompensas ajudandos os animais marinhos!</p>
+              <button class="user_unregistered-signup" id="signup-button">Cadastrar-se</button>
+            </div>
+      
+            <div class="user_options-registered">
+              <h2 class="user_registered-title">Possui uma conta?</h2>
+              <p class="user_registered-text">Faça o login e fique de olho a qual praia gostaria de apoiar!</p>
+              <button class="user_registered-login" id="login-button">Login</button>
+            </div>
+          </div>
+          
+          <div class="user_options-forms" id="user_options-forms">
+            <div class="user_forms-login">
+              <h2 class="forms_title">Login</h2>
+              <form class="forms_form">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" required autofocus />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Senha" class="forms_field-input" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <button type="button" class="forms_buttons-forgot">Esqueceu a senha?</button>
+                  <input type="submit" value="Log In" class="forms_buttons-action">
+                </div>
+              </form>
+            </div>
+            <div class="user_forms-signup">
+              <h2 class="forms_title">Cadastrar-se</h2>
+              <form class="forms_form">
+                <fieldset class="forms_fieldset">
+                  <div class="forms_field">
+                    <input type="text" placeholder="Nome completo" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="text" placeholder="Idade" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="email" placeholder="Email" class="forms_field-input" required />
+                  </div>
+                  <div class="forms_field">
+                    <input type="password" placeholder="Senha" class="forms_field-input" required />
+                  </div>
+                </fieldset>
+                <div class="forms_buttons">
+                  <input type="submit" value="Cadastrar-se" class="forms_buttons-action">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="./src/js/login.js"></script>
+</body>
+</html>
